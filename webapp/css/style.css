@@ -1,0 +1,25 @@
+/* Enter your custom styles here
+
+.myVBoxStyle {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	background-color: #f7fafe00;
+	padding: 1em;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.myVBoxStyle .myTextStyle {
+	font-size: 1.0em;
+	color: #555;
+	margin-bottom: 0.5em;
+}
+
+.myVBoxStyle .myDataStyle {
+	font-size: 1.0em;
+	color: #555;
+	margin-bottom: 0.5em;
+}
+
+ */

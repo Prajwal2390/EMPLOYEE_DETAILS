@@ -1,0 +1,44 @@
+<mvc:View xmlns:f="sap.f" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="employeeapplication.controller.EmployeeData" displayBlock="true">
+    <f:DynamicPage id="page" title="{i18n>listtitle}">
+            <f:title>
+			<f:DynamicPageTitle id="_IDGenDynamicPageTitle1">
+				<f:heading>
+					<Title id="_IDGenTitle1" text="Maclogs" />
+				</f:heading>
+				<!-- <f:expandedContent>
+					<tnt:InfoLabel id="_IDGenInfoLabel1" text="In transit" />
+				</f:expandedContent>
+				<f:snappedContent>
+					<tnt:InfoLabel id="_IDGenInfoLabel2" text="In transit" />
+				</f:snappedContent> -->
+				<f:actions>
+					<Button id="_IDGenButton1"
+						text="Create Personal Details"
+						type="Emphasized"
+						press="createpnl" />
+					<Button id="_IDGenButton2" text="Delete" type="Transparent" />
+					<!-- <Button id="_IDGenButton3" text="Copy" type="Transparent" />
+					<Button id="_IDGenButton4"
+						text="Toggle Footer"
+						type="Transparent"
+						press=".onToggleFooter" />
+					<Button id="_IDGenButton5" icon="sap-icon://action" type="Transparent" /> -->
+				</f:actions>
+                
+			</f:DynamicPageTitle>
+		</f:title>
+      
+     <f:content>
+     
+     <List noDataText="Drop list items here" id="list0" items="{/z_pnl_m}">
+         <items>
+             <StandardListItem type="Navigation" title="{Empid}" description="{Ename}" icon="data:image/png;base64, {Img}" id="item0" press="handle_press"/>     
+         </items>
+     </List>
+     </f:content>
+    
+    </f:DynamicPage>
+ 
+
+
+</mvc:View>
